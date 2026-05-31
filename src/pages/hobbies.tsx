@@ -34,13 +34,13 @@ export default function Hobbies() {
                   />
                 </div>
                 <div className="order-2 flex-1 text-center lg:text-left">
-                  <p className="mb-4 text-5xl font-bold leading-tight tracking-[0.05em] text-white sm:text-6xl lg:mb-6 lg:text-[80px] whitespace-nowrap">
+                  <p className="mb-4 text-5xl font-bold leading-tight tracking-[0.05em] text-white sm:text-6xl lg:mb-6 lg:text-[80px] lg:whitespace-nowrap">
                     HOBBIES
                   </p>
                   <p className="mb-3 text-xl font-light tracking-wide text-zinc-300 sm:text-2xl lg:mb-6 lg:text-[52px]">
                     Vesa Basha
                   </p>
-                  <p className="text-lg font-light tracking-wide text-zinc-300 lg:text-[36px] whitespace-nowrap">
+                  <p className="text-lg font-light tracking-wide text-zinc-300 lg:text-[36px] lg:whitespace-nowrap">
                     Game Developer | Computer fanatic
                   </p>
                   <SpotifyNowPlaying />
@@ -67,8 +67,7 @@ export default function Hobbies() {
                   Gamer and Game Developer
                 </h2>
                 <p className="mb-8 font-mono text-sm leading-relaxed text-zinc-300 sm:text-base">
-                  My journy as a programmer started because of my love for gaming. When I first<br />
-                  saw mario jump around I understood, I had to learn how to code.
+                  My journy as a programmer started because of my love for gaming. When I first saw mario jump around I understood, I had to learn how to code.
                 </p>
 
                 <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
@@ -85,7 +84,7 @@ export default function Hobbies() {
                       <p className="mb-4 py-4 font-mono text-sm text-zinc-300 sm:text-base">
                         Some more favorites and inspirations:
                       </p>
-                      <div className="flex gap-2 items-end">
+                      <div className="flex flex-wrap gap-2 items-end">
                         {[
                           { src: '/sans.png', alt: 'Sans - Undertale' },
                           { src: '/link.png', alt: 'Link - Zelda' },
@@ -98,7 +97,7 @@ export default function Hobbies() {
                             <img
                               src={src}
                               alt={alt}
-                              className="h-24 w-24 object-contain grayscale"
+                              className="h-14 w-14 sm:h-20 sm:w-20 lg:h-24 lg:w-24 object-contain grayscale"
                             />
                           </div>
                         ))}
@@ -106,9 +105,7 @@ export default function Hobbies() {
                     </div>
 
                     <p className="font-mono text-sm leading-relaxed text-zinc-300 sm:text-base">
-                      So, I taught myself programming.<br />
-                      10 years later I still haven't build my dream game, but I<br />
-                      will get there eventually....
+                      So, I taught myself programming. 10 years later I still haven't build my dream game, but I will get there eventually....
                     </p>
                   </div>
                 </div>
