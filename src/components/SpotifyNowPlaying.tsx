@@ -31,7 +31,7 @@ async function generateChallenge(verifier: string) {
 async function startLogin() {
   const verifier = generateVerifier()
   const challenge = await generateChallenge(verifier)
-  sessionStorage.setItem(VERIFIER_KEY, verifier)
+  localStorage.setItem(VERIFIER_KEY, verifier)
 
   const params = new URLSearchParams({
     client_id: CLIENT_ID,
@@ -46,7 +46,7 @@ async function startLogin() {
 }
 
 async function exchangeCode(code: string): Promise<boolean> {
-  const verifier = sessionStorage.getItem(VERIFIER_KEY)
+  const verifier = localStorage.getItem(VERIFIER_KEY)
   if (!verifier) return false
 
   const res = await fetch('https://accounts.spotify.com/api/token', {
@@ -63,7 +63,7 @@ async function exchangeCode(code: string): Promise<boolean> {
 
   if (!res.ok) return false
   saveTokens(await res.json())
-  sessionStorage.removeItem(VERIFIER_KEY)
+  localStorage.removeItem(VERIFIER_KEY)
   return true
 }
 
