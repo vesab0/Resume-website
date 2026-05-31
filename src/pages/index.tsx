@@ -11,7 +11,6 @@ export default function Home() {
       <SectionNav />
       
 
-      {/* Mobile hamburger: visible on small screens only */}
       <button
         onClick={() => setMobileOpen((s) => !s)}
         aria-label="Open sidebar"
@@ -24,7 +23,6 @@ export default function Home() {
 
       <Sidebar mobileOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
 
-      {/* overlay when mobile menu open */}
       {mobileOpen && <div onClick={() => setMobileOpen(false)} className="fixed inset-0 z-40 bg-black/40 lg:hidden" />}
 
       <main className="mt-25 flex-1">

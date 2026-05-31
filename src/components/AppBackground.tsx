@@ -1,6 +1,6 @@
 export default function AppBackground() {
   return (
-    <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+    <div className="absolute inset-x-0 top-0 h-[220vh] overflow-hidden" aria-hidden="true">
       <img
         src="/bg-silhouette.png"
         alt=""
