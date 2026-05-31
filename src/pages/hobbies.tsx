@@ -33,7 +33,7 @@ export default function Hobbies() {
                     className="w-full object-contain aspect-[784/997]"
                   />
                 </div>
-                <div className="order-2 flex-1 text-center lg:text-left">
+                <div className="order-2 flex-1 w-full text-center lg:text-left">
                   <p className="mb-4 text-5xl font-bold leading-tight tracking-[0.05em] text-white sm:text-6xl lg:mb-6 lg:text-[80px] lg:whitespace-nowrap">
                     HOBBIES
                   </p>

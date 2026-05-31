@@ -50,7 +50,7 @@ export default function SpotifyNowPlaying() {
             <img
               src={track.albumArt}
               alt="album art"
-              className="h-32 w-32 flex-shrink-0 object-cover lg:h-40 lg:w-40"
+              className="h-20 w-20 flex-shrink-0 object-cover sm:h-28 sm:w-28 lg:h-40 lg:w-40"
             />
           )}
           <div className="flex-1 min-w-0">
