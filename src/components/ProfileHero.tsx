@@ -53,9 +53,9 @@ export default function ProfileHero() {
 
             {showBubble && (
               <>
-                <div className="md:hidden absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-64 rounded-2xl bg-zinc-900 border border-zinc-700/70 p-4 text-left text-sm text-white/90 shadow-xl leading-relaxed">
+                <div className="md:hidden absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 rounded-2xl bg-zinc-900 border border-zinc-700/70 p-4 text-left text-sm text-white/90 shadow-xl leading-relaxed">
                   {currentProject}
-                  <div className="absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 h-3 w-3 rotate-45 bg-zinc-900 border-r border-b border-zinc-700/70" />
+                  <div className="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 h-3 w-3 rotate-45 bg-zinc-900 border-l border-t border-zinc-700/70" />
                 </div>
 
                 <div className="hidden md:block absolute top-0 left-full ml-5 w-72 rounded-2xl bg-zinc-900 border border-zinc-700/70 p-4 text-left text-sm text-white/90 shadow-xl leading-relaxed">
