@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <div className=" min-h-screen text-white flex">
       <SectionNav />
+      
 
       {/* Mobile hamburger: visible on small screens only */}
       <button
