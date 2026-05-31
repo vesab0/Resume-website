@@ -148,9 +148,9 @@ export const profileSections: ProfileSection[] = [
         logoClassName:
           'h-9 w-9 object-contain grayscale [filter:brightness(0)_invert(1)] opacity-90',
         details: [
-          'Built ORA Intelligence, a healthcare RAG platform over 10+ years of patient records using OpenAI, pgvector, and ML-powered X-ray analysis.',
+          'Built a healthcare RAG platform over 10+ years of patient records using OpenAI, pgvector, and ML-powered X-ray analysis.',
           'Built a Meta Ads dashboard with Redis caching and background pre-sync jobs for near-instant metrics.',
-          'Developed HireKosovo with AI candidate matching, automated resume scoring, and Whisper live transcription.',
+          'Developed platform with AI candidate matching, automated resume scoring, and Whisper live transcription.',
           'Owned backend API delivery and deployments across projects using FastAPI/Django/Node.js, Docker, and GitHub Actions.',
           'Built internal infra tooling including Slack error logging, a self-hosted Linux server, and a PR-triggered AI code audit bot.',
         ],
