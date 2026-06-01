@@ -74,7 +74,7 @@ export default function ProfileHero() {
             Backend Developer | Prishtina, Kosova
           </h2>
 
-          <h6 className="text-[9px] font-normal tracking-[0.06em] text-white/90 md:text-[12px] flex items-center justify-center gap-2">
+          <h6 className="text-[9px] font-normal tracking-[0.06em] text-white/90 md:text-[12px] flex flex-wrap md:flex-nowrap items-center justify-center gap-x-2 gap-y-1">
             <CopyText text="vesa.basha1@gmail.com" />
             <span>|</span>
             <a
@@ -84,6 +84,15 @@ export default function ProfileHero() {
               className="underline"
             >
               github/vesab0
+            </a>
+            <span>|</span>
+            <a
+              href="https://www.linkedin.com/in/vesa-basha-223566396/?skipRedirect=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              linkedin/vesa-basha
             </a>
             <span>|</span>
             <CopyText text="+383-45-927-842" />
