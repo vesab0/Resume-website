@@ -23,9 +23,9 @@ export default function Exploring() {
       {mobileOpen && <div onClick={() => setMobileOpen(false)} className="fixed inset-0 z-40 bg-black/40 lg:hidden" />}
 
       <main className="flex-1">
-        <section className="px-6 pb-16 pt-20 text-white sm:px-8 lg:px-8 lg:pb-20 lg:pt-24" data-section="Exploring">
+        <section className="px-8 pb-16 pt-20 text-white sm:px-10 lg:px-14 lg:pb-20 lg:pt-24" data-section="Exploring">
           <div className="flex min-h-[calc(100svh-5rem)] items-center justify-center lg:block lg:min-h-0">
-            <div className="w-full max-w-5xl -translate-y-4 lg:mx-auto lg:translate-y-0">
+            <div className="w-full max-w-4xl -translate-y-4 lg:mx-auto lg:translate-y-0">
               <div className="mb-12 flex flex-col items-center gap-8 lg:mb-16 lg:flex-row lg:items-start lg:justify-end lg:gap-20">
                 <div className="order-2 flex-1 text-center lg:order-1 lg:text-right">
                   <p className="mb-4 text-5xl font-bold leading-tight tracking-[0.05em] text-white sm:text-6xl lg:mb-6 lg:text-[80px]">

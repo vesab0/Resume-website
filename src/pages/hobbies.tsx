@@ -22,9 +22,9 @@ export default function Hobbies() {
       {mobileOpen && <div onClick={() => setMobileOpen(false)} className="fixed inset-0 z-40 bg-black/40 lg:hidden" />}
 
       <main className="flex-1">
-        <section className="px-6 pb-16 pt-20 text-white sm:px-8 lg:px-8 lg:pb-20 lg:pt-24" data-section="Hobbies">
+        <section className="px-8 pb-16 pt-20 text-white sm:px-10 lg:px-14 lg:pb-20 lg:pt-24" data-section="Hobbies">
           <div className="flex min-h-[calc(100svh-5rem)] items-center justify-center lg:block lg:min-h-0">
-            <div className="w-full max-w-5xl -translate-y-4 lg:mx-auto lg:translate-y-0">
+            <div className="w-full max-w-4xl -translate-y-4 lg:mx-auto lg:translate-y-0">
               <div className="mb-12 flex flex-col items-center gap-8 lg:mb-16 lg:flex-row lg:items-start lg:justify-start lg:gap-8">
                 <div className="order-1 w-48 flex-shrink-0 sm:w-64 lg:w-96">
                   <img
@@ -40,8 +40,9 @@ export default function Hobbies() {
                   <p className="mb-3 text-xl font-light tracking-wide text-zinc-300 sm:text-2xl lg:mb-6 lg:text-[52px]">
                     Vesa Basha
                   </p>
-                  <p className="text-lg font-light tracking-wide text-zinc-300 lg:text-[36px] lg:whitespace-nowrap">
-                    Game Developer | Computer fanatic
+                  <p className="text-lg font-light tracking-wide leading-tight text-zinc-300 lg:text-[36px]">
+                    <span className="block">Game Developer</span>
+                    <span className="block">Computer fanatic</span>
                   </p>
                   <SpotifyNowPlaying />
                 </div>
