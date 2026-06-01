@@ -10,13 +10,13 @@ export default function SectionNav() {
   }
 
   return (
-    <div className="hidden lg:block lg:fixed lg:left-60 lg:top-1/2 lg:z-50 lg:h-56 lg:w-32 lg:-translate-y-1/2 lg:p-3">
-      <nav className="flex h-full flex-col items-center justify-around gap-0.5">
+    <div className="hidden lg:block lg:fixed lg:left-14 lg:top-1/2 lg:z-40 lg:h-56 lg:w-28 lg:-translate-y-1/2 lg:px-2">
+      <nav className="flex h-full flex-col items-start justify-around gap-0.5">
         {sectionNavItems.map((section) => (
           <button
             key={section}
             onClick={() => handleSectionClick(section)}
-            className="text-[10px] font-semibold tracking-[0.06em] text-zinc-300 transition-colors hover:text-zinc-100 md:text-[11px]"
+            className="text-left text-[10px] font-semibold tracking-[0.06em] text-zinc-300 transition-colors hover:text-zinc-100 md:text-[11px]"
           >
             {section.split(' ')[0]}
           </button>

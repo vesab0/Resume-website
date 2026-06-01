@@ -7,9 +7,7 @@ export default function Home() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <div className=" min-h-screen text-white flex">
-      <SectionNav />
-      
+    <div className="min-h-screen text-white flex">
 
       <button
         onClick={() => setMobileOpen((s) => !s)}
@@ -23,9 +21,11 @@ export default function Home() {
 
       <Sidebar mobileOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
 
+      <SectionNav />
+
       {mobileOpen && <div onClick={() => setMobileOpen(false)} className="fixed inset-0 z-40 bg-black/40 lg:hidden" />}
 
-      <main className="mt-25 flex-1">
+      <main className="mt-25 flex-1 min-w-0">
         <ProfileHero />
       </main>
     </div>
