@@ -41,7 +41,7 @@ export default function SpotifyNowPlaying() {
 
   return (
     <div className="mt-8 lg:mt-15">
-      <p className="mb-8 text-sm font-light tracking-wide text-zinc-400 lg:text-base">
+      <p className="mb-4 text-sm font-light tracking-wide text-zinc-400 lg:text-base">
         {track?.isPlaying ? 'Listening to:' : 'Not playing'}
       </p>
       {track ? (
