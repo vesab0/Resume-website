@@ -45,7 +45,7 @@ export default function SpotifyNowPlaying() {
         {track?.isPlaying ? 'Listening to:' : 'Not playing'}
       </p>
       {track ? (
-        <div className="flex mt-10 items-end gap-5 lg:gap-6">
+        <div className="flex mt-6 items-end gap-5 lg:gap-6">
           {track.albumArt && (
             <img
               src={track.albumArt}
