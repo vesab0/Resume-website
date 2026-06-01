@@ -19,7 +19,7 @@ export default function ProjectGrid({ cards }: ProjectGridProps) {
             <img
               src={project.image}
               alt={`${project.title} preview`}
-              className="h-40 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+              className="h-auto w-full object-contain transition-transform duration-300 ease-out group-hover:scale-[1.03] md:h-40 md:object-cover"
             />
           </div>
 

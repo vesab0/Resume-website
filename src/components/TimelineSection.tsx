@@ -9,7 +9,7 @@ export default function TimelineSection({ items }: TimelineSectionProps) {
     <div className="space-y-4">
       {items.map((item) => (
         <article key={item.title} className="space-y-1">
-          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1">
+          <div className="grid grid-cols-1 gap-x-3 gap-y-1 md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
             <div className="flex min-w-0 items-center gap-2">
               {item.logo && (
                 <img
@@ -30,7 +30,7 @@ export default function TimelineSection({ items }: TimelineSectionProps) {
           </div>
 
           {(item.subtitle || item.location) && (
-            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 italic">
+            <div className="flex flex-col gap-y-1 italic md:flex-row md:items-baseline md:justify-between md:gap-x-4">
               {item.subtitle ? (
                 <p className="text-[11px] tracking-[0.06em] text-zinc-300 md:text-[12px]">
                   {item.subtitle}

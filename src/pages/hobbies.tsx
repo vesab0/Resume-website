@@ -128,7 +128,7 @@ export default function Hobbies() {
                       <img
                         src="/game-mitoza.png"
                         alt="Mitoza preview"
-                        className="h-56 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+                        className="h-auto w-full object-contain transition-transform duration-300 ease-out group-hover:scale-[1.03] md:h-56 md:object-cover"
                       />
                     </div>
                     <h3 className="mt-3 text-[12px] font-semibold tracking-[0.06em] text-zinc-100 md:text-[13px]">
@@ -149,7 +149,7 @@ export default function Hobbies() {
                       <img
                         src="/game-budyfight.png"
                         alt="Budy Fight preview"
-                        className="h-56 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+                        className="h-auto w-full object-contain transition-transform duration-300 ease-out group-hover:scale-[1.03] md:h-56 md:object-cover"
                       />
                     </div>
                     <h3 className="mt-3 text-[12px] font-semibold tracking-[0.06em] text-zinc-100 md:text-[13px]">
@@ -165,7 +165,7 @@ export default function Hobbies() {
                       <img
                         src="/game-artus.png"
                         alt="ARTUS preview"
-                        className="h-56 w-full object-cover"
+                        className="h-auto w-full object-contain md:h-56 md:object-cover"
                       />
                     </div>
                     <h3 className="mt-3 text-[12px] font-semibold tracking-[0.06em] text-zinc-100 md:text-[13px]">
@@ -186,7 +186,7 @@ export default function Hobbies() {
                       <img
                         src="/game-pong.png"
                         alt="Pong preview"
-                        className="h-56 w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+                        className="h-auto w-full object-contain transition-transform duration-300 ease-out group-hover:scale-[1.03] md:h-56 md:object-cover"
                       />
                     </div>
                     <h3 className="mt-3 text-[12px] font-semibold tracking-[0.06em] text-zinc-100 md:text-[13px]">
