@@ -260,7 +260,7 @@ export const profileSections: ProfileSection[] = [
         logo: '/samia.png',
         logoClassName:
           'h-9 w-9 object-contain [filter:grayscale(1)_invert(1)_contrast(180%)] mix-blend-screen opacity-90',
-        details: ["Led the school programming team, taught peers, and built the school's official website."],
+        details: ["Led the school programming team, taught peers"],
       },
     ],
   },
