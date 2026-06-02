@@ -28,12 +28,13 @@ export type ProjectCard = {
 
 export type ProfileSection = {
   title: string
-  kind: 'timeline' | 'projects'
+  kind: 'timeline' | 'projects' | 'text'
+  body?: string
   items: SectionItem[]
   projectCards?: ProjectCard[]
 }
 
-export const sectionNavItems = ['Home', 'Tech Stack', 'Experience', 'Education', 'Projects', 'Extracurricular'] as const
+export const sectionNavItems = ['Home', 'Tech Stack', 'Experience', 'Education', 'Projects', 'Technical Focus', 'Extracurricular'] as const
 
 export const badgeGroups: BadgeGroup[] = [
   {
@@ -119,10 +120,6 @@ export const badgeGroups: BadgeGroup[] = [
         logo: 'vercel',
       },
       {
-        name: 'Kubernetes',
-        logo: 'kubernetes',
-      },
-      {
         name: 'Cursor',
         logo: 'cursor',
       },
@@ -142,28 +139,27 @@ export const profileSections: ProfileSection[] = [
       {
         title: 'Asaasin AI',
         subtitle: 'Backend Developer',
-        date: 'April 2025 - Present',
+        date: 'April 2025 – Present',
         location: 'Prishtina, Kosova',
         logo: '/logo-asaasin.png',
         logoClassName:
           'h-9 w-9 object-contain grayscale [filter:brightness(0)_invert(1)] opacity-90',
         details: [
-          'Built a healthcare RAG platform over 10+ years of patient records using OpenAI, pgvector, and ML-powered X-ray analysis.',
-          'Built a Meta Ads dashboard with Redis caching and background pre-sync jobs for near-instant metrics.',
-          'Developed platform with AI candidate matching, automated resume scoring, and Whisper live transcription.',
-          'Owned backend API delivery and deployments across projects using FastAPI/Django/Node.js, Docker, and GitHub Actions.',
-          'Built internal infra tooling including Slack error logging, a self-hosted Linux server, and a PR-triggered AI code audit bot.',
+          'Built a production RAG system over 10+ years of patient records using OpenAI and pgvector, exposing structured medical data and X-ray model outputs through REST APIs for multi-role dashboards and external integrations.',
+          'Designed a Redis-backed caching and background job system for a Meta Ads analytics platform, enabling pre-synced metrics and near-instant dashboard load times.',
+          'Developed backend services for an AI hiring platform including resume scoring, candidate matching, and real-time video transcription using Whisper-based pipelines.',
+          'Owned backend architecture across multiple systems, including FastAPI/Django/Node.js services, Dockerized deployments, CI/CD pipelines, and shared internal infrastructure used across the entire engineering team.',
         ],
       },
       {
         title: 'JCoders Academy',
-        subtitle: 'Assistant Programming Instructor',
-        date: 'February 2024 - September 2024',
+        subtitle: 'Programming Instructor',
+        date: 'February 2024 – September 2024',
         location: 'Prishtina, Kosova',
         logo: '/logo-jcoders.png',
         logoClassName:
           'h-9 w-9 object-contain grayscale contrast-200 [filter:grayscale(1)_invert(1)] mix-blend-lighten',
-        details: ['Assisted in teaching web development and Python to kids and high school students.'],
+        details: ['Taught web development and Python to kids and high school students.'],
       },
     ],
   },
@@ -172,9 +168,9 @@ export const profileSections: ProfileSection[] = [
     kind: 'timeline',
     items: [
       {
-        title: 'University for Business and Technology',
-        subtitle: 'Bachelor of Science in Computer Science and Engineering',
-        date: 'Present',
+        title: 'UBT - University for Business and Technology',
+        subtitle: 'Bachelor of Science in Computer Science and Engineering - GPA: 8.5/10',
+        date: '2024 – 2027 (Expected)',
         location: 'Prishtina, Kosova',
         logo: '/logo-ubt.png',
         logoClassName:
@@ -191,25 +187,49 @@ export const profileSections: ProfileSection[] = [
         title: 'Insignia',
         href: 'https://insignia-ruby.vercel.app/',
         image: '/project-insignia.png',
-        description: 'AI platform that scores merged pull requests using role-aware review intelligence.',
+        description:
+          'AI-powered code review platform that scores every merged PR by role and seniority, with custom rules per org.',
         badges: [
+          { name: 'GitHub Actions', logo: 'githubactions' },
+          { name: 'PostgreSQL', logo: 'postgresql' },
+          { name: 'Docker', logo: 'docker' },
           { name: 'FastAPI', logo: 'fastapi' },
           { name: 'React', logo: 'react' },
-          { name: 'Docker', logo: 'docker' },
         ],
       },
       {
-        title: 'Twin Peaks',
+        title: 'Twin Peaks Cinema',
         href: 'https://github.com/vesab0/Movie-recommendation-system',
         image: '/project-twin-peaks.png',
         description:
-          'Cinema platform with a hybrid recommendation engine for personalized movie suggestions.',
+          'Full-stack cinema platform with a hybrid recommendation engine — KNN, collaborative filtering, and auto-email when a new movie matches your taste.',
         badges: [
-          { name: 'React', logo: 'react' },
-          { name: '.NET', logo: 'dotnet' },
           { name: 'FastAPI', logo: 'fastapi' },
+          { name: '.NET', logo: 'dotnet' },
+          { name: 'React', logo: 'react' },
           { name: 'Docker', logo: 'docker' },
+          { name: 'MySQL', logo: 'mysql' },
         ],
+      },
+    ],
+  },
+  {
+    title: 'Technical Focus',
+    kind: 'timeline',
+    items: [
+      {
+        title: 'AI-native builder',
+        details: ['RAG, vector search, prompt engineering, and production LLM integrations.'],
+      },
+      {
+        title: 'AI-assisted development workflows',
+        details: [
+          'Proficient with LLMs, agentic tooling, prompt engineering, code generation, debugging, automation, context orchestration, and rapid prototyping across modern AI platforms.',
+        ],
+      },
+      {
+        title: 'Fast adapter',
+        details: ['Rapidly adapt to new languages, frameworks, and tools through hands-on implementation and shipped projects.'],
       },
     ],
   },
@@ -218,8 +238,9 @@ export const profileSections: ProfileSection[] = [
     kind: 'timeline',
     items: [
       {
-        title: 'FLOSSK - Free Libre Open Source Software Kosovo',
+        title: 'FLOSSK – Free Libre Open Source Software Kosovo',
         subtitle: 'Member',
+        date: 'February 2026 – Present',
         logo: '/logo-flossk.png',
         logoClassName:
           'h-9 w-9 object-contain [filter:grayscale(1)_invert(1)_contrast(180%)] mix-blend-screen opacity-90',

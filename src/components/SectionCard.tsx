@@ -6,12 +6,16 @@ type SectionCardProps = {
   titleClassName: string
   children: ReactNode
   dataSection?: string
+  headerRight?: ReactNode
 }
 
-export default function SectionCard({ title, titleClassName, children, dataSection }: SectionCardProps) {
+export default function SectionCard({ title, titleClassName, children, dataSection, headerRight }: SectionCardProps) {
   return (
     <SectionShell dataSection={dataSection}>
-      <h2 className={titleClassName}>{title}</h2>
+      <div className="flex items-start justify-between">
+        <h2 className={titleClassName}>{title}</h2>
+        {headerRight && <div className="-mt-1">{headerRight}</div>}
+      </div>
       {children}
     </SectionShell>
   )

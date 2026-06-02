@@ -20,6 +20,12 @@ export default function Sidebar({ mobileOpen = false, onClose }: SidebarProps) {
             >
               #     Home
             </Link>
+                        <Link
+              to="/projects"
+              className="whitespace-nowrap rounded-md px-2 py-2 hover:text-zinc-500/80 transition-colors"
+            >
+              #     Projects
+            </Link>
             <Link
               to="/exploring"
               className="whitespace-nowrap rounded-md px-2 py-2 hover:text-zinc-500/80 transition-colors"
@@ -32,6 +38,7 @@ export default function Sidebar({ mobileOpen = false, onClose }: SidebarProps) {
             >
               #     Hobbies
             </Link>
+
           </nav>
         </div>
       </aside>
@@ -62,6 +69,9 @@ export default function Sidebar({ mobileOpen = false, onClose }: SidebarProps) {
           </Link>
           <Link to="/hobbies" className="rounded-md px-2 py-2 hover:text-zinc-500/80 transition-colors">
             Hobbies
+          </Link>
+          <Link to="/projects" className="rounded-md px-2 py-2 hover:text-zinc-500/80 transition-colors">
+            Projects
           </Link>
         </nav>
       </aside>

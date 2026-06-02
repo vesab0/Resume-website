@@ -18,7 +18,7 @@ export default function SectionNav() {
             onClick={() => handleSectionClick(section)}
             className="text-left text-[10px] font-semibold tracking-[0.06em] text-zinc-300 transition-colors hover:text-zinc-100 md:text-[11px]"
           >
-            {section.split(' ')[0]}
+            {section === 'Technical Focus' ? 'Focus' : section.split(' ').slice(0, 2).join(' ')}
           </button>
         ))}
       </nav>
